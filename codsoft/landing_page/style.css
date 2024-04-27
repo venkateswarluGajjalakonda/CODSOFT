@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500&family=Poppins&family=Roboto:ital,wght@1,500&display=swap');
+
+:root{
+    --primary-color: #ffffff;
+    --primary-height: 100vh;
+    --primary-width: 100vw;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header{
+    width: var(--primary-width);
+    height: var(--primary-height);
+    background: url('background.jpg') ;
+    background-size: cover;
+    font-family: 'Oswald', sans-serif;
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Roboto', sans-serif;;
+}
+
+nav{
+    width: var(--primary-width);
+    height: var(--primary-height);
+    padding: 30px;
+    color: var(--primary-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: top;
+}
+
+.logo{
+    font-size: 2em;
+    letter-spacing: 2px;
+}
+
+.menu a{
+    text-decoration: none;
+    color: var(--primary-color);
+    padding: 10px 20px; 
+    font-size: 20px; 
+    position: relative;
+}
+.menu a:before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    border-bottom: 2px solid indianred;
+    transition: 0.4s linear;
+}
+.menu a:hover:before{
+    width: 90%;
+}
+
+.register a{
+    text-decoration: none;
+    color: var(--primary-color);
+    padding: 10px 20px; 
+    font-size: 20px; 
+    background: transparent;
+    border: 1px solid indianred;
+    border-radius: 9px;
+    transition: 0.4s;
+}
+.register a:hover{
+    background: indianred;
+}
+
+.content{
+    max-width: 650px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: var(--primary-color);
+}
+.content span{
+    letter-spacing: 5px;
+}
+.content h1{
+    font-size: 3.5em;
+}
+.content a{
+    text-decoration: none;
+    background: transparent;
+    border: 1px solid indianred;
+    color: var(--primary-color);
+    padding: 10px 20px;
+    letter-spacing: 5px;
+    transition: 0.4s;
+}
+.content a:hover{
+    background: indianred;   
+}
